@@ -69,7 +69,7 @@ public class Homework_5 {
          */
         System.out.println("\n--> Q4 <--");
 
-        int num = 34;
+        int num = 30;
         System.out.println("my number " + num + " is divisible by what number ?");
 
         if (num %5 == 0) {
@@ -134,11 +134,13 @@ public class Homework_5 {
         System.out.println("\n--> Q6 <--");
         String[] words = {"healthy", "speak", "learning", "king", "Joy", "smile", "learn", "live" , "give", "living standard", "life"};
         System.out.println("words --> " + Arrays.toString(words));
-        System.out.println("words which has length greater than 5 and starts with l : ");
+        System.out.println("\nwords which has length greater than 5 and starts with l : ");
         char startWithLetter = 'l';
         for ( int i = 0 ; i<= words.length -1 ; i++) {
-            if (words[i].length() > 5 && words[i].toLowerCase().charAt(0) == startWithLetter)
-        System.out.println( words[i]);
+            //if (words[i].length() > 5 && words[i].toLowerCase().charAt(0) == startWithLetter)
+            if (words[i].length() > 5 && words[i].toLowerCase().startsWith("l")) ;
+
+            System.out.println(words[i]);
         }
 
 
