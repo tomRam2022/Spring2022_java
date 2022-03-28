@@ -1,3 +1,4 @@
+
 package Homework;
 
 import java.util.Arrays;
@@ -42,17 +43,7 @@ public class Homework_6 {
          *
          */
 
-        String sent ="new york city";
-        String[] sentSplit = sent.split(" ");
-        String sentReverse = "";
 
-        for (int i = 1; i <= sentSplit.length; i++) {
-            sentReverse += " " + sentSplit[sentSplit.length-i];
-        }
-
-        System.out.println("\n--> Q2 <--");
-        System.out.println("print in reverse -> " + sent );
-        System.out.println(sentReverse);
 
         /**
          * Q3:
@@ -90,7 +81,7 @@ public class Homework_6 {
         for (int i = 0; i <= numbers.length-1 ; i++) {
 
             if (numbers[i] < num )
-            num = numbers[i];
+                num = numbers[i];
         }
         System.out.println("\n--> Q4 <--");
         System.out.println("Find the minimum value from the given array -> " + Arrays.toString(numbers));

@@ -17,19 +17,19 @@ public class Homework_5 {
          */
 
         String country = "Mexico";
-        String [] countryNameSplit = country.split("");
+        String[] countryNameSplit = country.split("");
         int numLengthOfWord = countryNameSplit.length;
 
-        System.out.println( "\n--> Q1 <--");
+        System.out.println("\n--> Q1 <--");
         System.out.println("Country name -> " + country);
         System.out.println("Length of country name -> " + numLengthOfWord);
 
         /**
-        * Q2:
+         * Q2:
          * Print the number of words in the sentence2-value
-        */
+         */
         String sentence = "Health was Earlier said to Be the ability of the body functioning WElL.";
-        String [] sentSplit = sentence.split(" ");
+        String[] sentSplit = sentence.split(" ");
         int numOfWords = sentSplit.length;
 
         System.out.println("\n--> Q2 <--");
@@ -50,7 +50,7 @@ public class Homework_5 {
          */
         String sentence2 = "new york city";
         String sent2UpperCase = sentence2.toUpperCase(Locale.ROOT);
-        String [] sent2Split = sent2UpperCase.split(" ");
+        String[] sent2Split = sent2UpperCase.split(" ");
         char letterZeroIndex = sent2Split[0].charAt(0);
         char letterOneIndex = sent2Split[1].charAt(0);
         char letterTwoIndex = sent2Split[2].charAt(0);
@@ -72,13 +72,13 @@ public class Homework_5 {
         int num = 30;
         System.out.println("my number " + num + " is divisible by what number ?");
 
-        if (num %5 == 0) {
+        if (num % 5 == 0) {
             System.out.println("divisible by 5");
-        } else if (num %3 == 0) {
+        } else if (num % 3 == 0) {
             System.out.println("divisible by 3");
-        } else if (num %5 == 0 && num %3 == 0) {
+        } else if (num % 5 == 0 && num % 3 == 0) {
             System.out.println("divisible by 5 and 3");
-        } else if (num %5 != 0 && num %3 != 0) {
+        } else if (num % 5 != 0 && num % 3 != 0) {
             System.out.println("NOT divisible by 5 and 3");
         }
         /**
@@ -107,11 +107,11 @@ public class Homework_5 {
         double maxScore = 100;
         double scoreAvg = myScore / maxScore * 100;
 
-        if (scoreAvg >= 91 ) {
+        if (scoreAvg >= 91) {
             System.out.println("Grade A");
         } else if (scoreAvg >= 81 && scoreAvg <= 90.99) {
             System.out.println("Grade B");
-        } else if (scoreAvg >= 71 && scoreAvg <= 80.99 ) {
+        } else if (scoreAvg >= 71 && scoreAvg <= 80.99) {
             System.out.println("Grade C");
         } else if (scoreAvg >= 61 && scoreAvg <= 70.99) {
             System.out.println("Grade D");
@@ -132,17 +132,17 @@ public class Homework_5 {
          *
          */
         System.out.println("\n--> Q6 <--");
-        String[] words = {"healthy", "speak", "learning", "king", "Joy", "smile", "learn", "live" , "give", "living standard", "life"};
+        String[] words = {"healthy", "speak", "learning", "king", "Joy", "smile", "learn", "live", "give", "living standard", "life"};
         System.out.println("words --> " + Arrays.toString(words));
         System.out.println("\nwords which has length greater than 5 and starts with l : ");
         char startWithLetter = 'l';
-        for ( int i = 0 ; i<= words.length -1 ; i++) {
+        for (int i = 0; i <= words.length - 1; i++) {
             //if (words[i].length() > 5 && words[i].toLowerCase().charAt(0) == startWithLetter)
-            if (words[i].length() > 5 && words[i].toLowerCase().startsWith("l")) ;
+                if ( words[i].length() > 3 && words[i].toLowerCase().startsWith("k"))
 
             System.out.println(words[i]);
         }
 
-
     }
+
 }
