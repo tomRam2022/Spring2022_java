@@ -1,5 +1,8 @@
 package Practice;
 
+import Test.TestMethod;
+
+import java.util.Arrays;
 import java.util.Locale;
 
 public class Practice1 {
@@ -73,8 +76,18 @@ public class Practice1 {
             }
 
         }
-            System.out.println(wordd);
-    }
+        System.out.println(wordd);
 
+        TestMethod ans = new TestMethod();
+        int[] num = {32, 54, 12, 67, 2, 5};
+        int[] sortNum = ans.sortArray(num);
+        System.out.println(Arrays.toString(sortNum));
+
+        int nums = 123;
+        int answer = ans.addNumString(nums);
+        System.out.println(answer);
+
+
+    }
 }
 

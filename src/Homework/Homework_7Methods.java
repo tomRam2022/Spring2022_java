@@ -57,7 +57,7 @@ public class Homework_7Methods {
             if (array[i].length() > max) {
                 max = array[i].length();
                 word = array[i];
-            }
+            } 
 
         }
         return word;
