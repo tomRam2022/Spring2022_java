@@ -64,33 +64,43 @@ public class TestQuestions {
          * input -> 23, {23, 54, 67, 12, 34, 23, 56}
          * returned array -> {54, 67, 12, 34, 56}
          */
-
-
-        /**
-         * Ques-4:
-         * Create a method to print the common Strings values in two input-String-arrays
-         * points: 40
-         * Note: two input-String-arrays can be of same size or different size
-         */
-        /*
-         *
-         * String[] inputArr3 = {“ab”, “abcd”, “abc”, “abcde”, “defg”, "koli”};
-         * String[] inputArr4 = {“abcde”, “jhuy”, “plot”, “koli”};
-         *
-         * printCommons(inputArr3, inputArr4);
-         * abcde
-         * koli
-         */
-        String[] words1 = {"ab", "abcd", "abc", "abcde", "defg", "koli"};
-        String[] words2 = {"abcde", "jhuy", "plot", "koli"};
-        for (String fromwords1 : words1) {
-            for (String fromwords2 : words2) {
-                if (fromwords1.equalsIgnoreCase(fromwords2)) {
-                    System.out.println(fromwords1.toLowerCase());
-                }
-
-
+        int[] nums = {23, 54, 67, 12, 34, 23, 56};
+        int remove = 67;
+        int[] restOfValuesArr = new int[nums.length - 1];
+        int i=0;
+        for (int nummm : nums) {
+            if (nummm != remove) {
+                restOfValuesArr[i] = nummm;
+                i++;
             }
         }
-    }
-}
+                System.out.println(Arrays.toString(restOfValuesArr));
+
+                /**
+                 * Ques-4:
+                 * Create a method to print the common Strings values in two input-String-arrays
+                 * points: 40
+                 * Note: two input-String-arrays can be of same size or different size
+                 */
+                /*
+                 *
+                 * String[] inputArr3 = {“ab”, “abcd”, “abc”, “abcde”, “defg”, "koli”};
+                 * String[] inputArr4 = {“abcde”, “jhuy”, “plot”, “koli”};
+                 *
+                 * printCommons(inputArr3, inputArr4);
+                 * abcde
+                 * koli
+                 */
+                String[] words1 = {"ab", "abcd", "abc", "abcde", "defg", "koli"};
+                String[] words2 = {"abcde", "jhuy", "plot", "koli"};
+                for (String fromwords1 : words1) {
+                    for (String fromwords2 : words2) {
+                        if (fromwords1.equalsIgnoreCase(fromwords2)) {
+                            //System.out.println(fromwords1.toLowerCase());
+                        }
+
+
+                    }
+                }
+            }
+        }

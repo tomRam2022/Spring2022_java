@@ -13,8 +13,6 @@ public class TestMethod {
                     num[j] = num[j] + num[j - 1];
                     num[j - 1] = num[j] - num[j - 1];
                     num[j] = num[j] - num[j - 1];
-
-
                 }
             }
         }
@@ -22,7 +20,6 @@ public class TestMethod {
 
 
     }
-
     public int addNumString(int numbers) {
 
         int nums = numbers;
@@ -33,7 +30,22 @@ public class TestMethod {
             total += Integer.valueOf(num);
         }
         return total;
+
+
     }
+    public int[] removeNumFromArr ( int num , int[] numArr) {
+        int[] nums = numArr;
+        int remove = num;
+        int[] restOfValuesArr = new int[nums.length - 1];
+        int i = 0;
+        for (int nummm : nums) {
+            if (nummm != remove) {
+                restOfValuesArr[i] = nummm;
+                i++;
+            }
+        }return restOfValuesArr;
+    }
+
 
     public void commonWordsInArray(String[] words1, String[] words2) {
         for (String fromwords1 : words1) {
